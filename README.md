@@ -1,4 +1,4 @@
-# 🌿 Experiência Prática 1 – DDesenvolvimento Front-End Para Web
+# 🌿 Experiência Prática 1 – Desenvolvimento Front-End Para Web
 
 Este projeto foi desenvolvido como parte da disciplina **Desenvolvimento Front-End Para Web**, com o objetivo de aplicar conceitos de **HTML**, **CSS** e **JavaScript** na criação de um site informativo e funcional.
 
