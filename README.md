@@ -1,57 +1,89 @@
-# 🌿 Experiência Prática 1 – Desenvolvimento Front-End Para Web
+# 🌱 Projeto Vida Verde
 
-Este projeto foi desenvolvido como parte da disciplina **Desenvolvimento Front-End Para Web**, com o objetivo de aplicar conceitos de **HTML**, **CSS** e **JavaScript** na criação de um site informativo e funcional.
-
----
-
-## 🏢 Tema do Projeto: ONG Fictícia “Projeto Vida Verde”
-
-O **Projeto Vida Verde** é uma organização sem fins lucrativos fictícia, criada para fins acadêmicos.  
-Sua missão é conscientizar comunidades sobre a importância da sustentabilidade e incentivar o reflorestamento urbano.
+O **Projeto Vida Verde** é um site institucional desenvolvido com HTML, CSS e JavaScript, com o objetivo de divulgar ações de **reflorestamento urbano, sustentabilidade e educação ambiental**.  
+O projeto foi estruturado com foco em **organização de conteúdo, responsividade e clareza visual**, utilizando uma paleta de cores inspirada em tons naturais e terrosos.
 
 ---
 
-## 🧩 Estrutura de Pastas
+## 🧭 Estrutura do Projeto
 
-Experiência Prática 1/
+Projeto-Vida-Verde/
+│
+├── index.html # Página inicial
+├── sobre.html # Página institucional
+├── cadastro.html # Página de cadastro/contato
+├── em-andamento.html # Página de projetos em andamento
+├── concluidos.html # Página de projetos concluídos
 │
 ├── assets/
 │ ├── css/
-│ │ └── styles.css
-│ ├── images/
-│ └── js/
-│ └── masks.js
+│ │ └── styles.css # Estilos principais do site
+│ │
+│ ├── js/
+│ │ └── menu.js # Script responsável pelo menu interativo
+│ │
+│ └── images/
+│ ├── logo-vida-verde.png # Logotipo do projeto
 │
-├── cadastro.html
-├── index.html
-├── projetos.html
 └── README.md
 
----
-
-## 💻 Tecnologias Utilizadas
-
-- **HTML5** para estruturação do conteúdo  
-- **CSS3** para estilização e layout  
-- **JavaScript** para interatividade (máscaras de formulário)
+yaml
+Copiar código
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🎨 Paleta de Cores
 
-1. Faça o download ou clone este repositório.
-2. Abra o arquivo `index.html` no navegador.
-3. O site será exibido localmente.
-
----
-
-## 🧠 Autor
-
-**Eduardo Zen**  
-Curso: Análise e Desenvolvimento de Sistemas
-Disciplina: Desenvolvimento Front-End Para Web
-Instituição: Universidade Positivo
+| Cor              | Função principal             | Código Hex  |
+|------------------|------------------------------|--------------|
+| Verde Escuro     | Cabeçalho e destaques        | `#2d5a27` |
+| Verde Claro      | Botões e efeitos hover       | `#7bb661` |
+| Marrom           | Elementos de destaque        | `#a67c52` |
+| Areia            | Fundo das páginas            | `#f3f0e6` |
+| Branco / Preto   | Texto e contrastes           | `#fff / #222` |
 
 ---
 
-> *Este projeto é fictício e tem caráter exclusivamente educacional.*
+## ⚙️ Funcionalidades
+
+- 🌿 **Menu interativo com dropdown**  
+  O menu “Projetos” possui subitens (“Em andamento” e “Concluídos”), exibidos apenas ao passar o mouse.
+
+- 💻 **Layout totalmente responsivo**  
+  O design adapta-se a telas de celular, tablet e desktop, com botão de menu tipo “hambúrguer” em telas pequenas.
+
+- 🧩 **Componentização visual**  
+  Cartões de projeto reutilizáveis (`.card`) e grades (`.projetos-grid`) otimizam a exibição de informações.
+
+- 🔄 **Organização modular**  
+  Todo o CSS, JavaScript e imagens estão separados em pastas dentro de `assets/` para fácil manutenção.
+
+---
+
+## 📸 Páginas Principais
+
+- **🏠 Início (`index.html`)**  
+  Apresenta o projeto, resumo das ações e cards de destaque.
+
+- **🌎 Sobre (`sobre.html`)**  
+  Explica os objetivos e valores do Projeto Vida Verde.
+
+- **✍️ Cadastro (`cadastro.html`)**  
+  Formulário simples para novos voluntários e interessados.
+
+- **🌱 Projetos em Andamento (`em-andamento.html`)**  
+  Lista ações que estão atualmente em execução.
+
+- **🌳 Projetos Concluídos (`concluidos.html`)**  
+  Mostra iniciativas já finalizadas com sucesso.
+
+---
+
+## 📁 Tecnologias Utilizadas
+
+- **HTML5** — Estrutura semântica e acessível  
+- **CSS3** — Layout responsivo e design system próprio  
+- **JavaScript (ES6)** — Menu interativo e responsividade  
+- **GitHub Pages** — Hospedagem estática do site  
+
+---
