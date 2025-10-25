@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Logo Projeto Vida Verde">
+  <!-- fundo com margem interna -->
+  <rect x="0" y="0" width="420" height="120" rx="14" fill="#e8f5e9"/>
+
+  <!-- emblema à esquerda (círculo + folha) -->
+  <g transform="translate(50,18)">
+    <circle cx="0" cy="42" r="32" fill="#388e3c"/>
+    <path d="M-6 28 C-14 36, -14 52, -6 62 C2 52, 2 36, -6 28 Z" fill="#81c784"/>
+  </g>
+
+  <!-- texto principal, posicionado com sobra suficiente -->
+  <text x="130" y="72" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#2e7d32" font-weight="700">
+    Projeto Vida Verde
+  </text>
+
+  <!-- subtítulo opcional (menor e leve) -->
+  <text x="130" y="94" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#2e7d32" opacity="0.85">
+    Plantando um futuro melhor para todos
+  </text>
+</svg>
