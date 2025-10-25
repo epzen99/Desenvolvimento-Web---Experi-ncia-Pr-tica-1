@@ -1,0 +1,224 @@
+/* =========================================================
+   Projeto Vida Verde - Design System e Layout Responsivo
+   ========================================================= */
+
+/* ---------- VARIÁVEIS DE DESIGN SYSTEM ---------- */
+:root {
+  /* Paleta de cores (verdes e terrosos) */
+  --verde-escuro: #2d5a27;
+  --verde-claro: #7bb661;
+  --marrom: #a67c52;
+  --areia: #f3f0e6;
+  --cinza: #555;
+  --branco: #fff;
+  --preto: #222;
+  --amarelo: #f1c40f;
+  --vermelho: #c0392b;
+
+  /* Tipografia */
+  --fonte-principal: 'Segoe UI', Arial, sans-serif;
+
+  /* Espaçamentos modulares */
+  --esp-1: 8px;
+  --esp-2: 16px;
+  --esp-3: 24px;
+  --esp-4: 32px;
+  --esp-5: 48px;
+  --esp-6: 64px;
+}
+
+/* ---------- REGRAS GERAIS ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--areia);
+  color: var(--preto);
+  line-height: 1.6;
+}
+
+/* ---------- CABEÇALHO E NAVEGAÇÃO ---------- */
+header {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  padding: var(--esp-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--esp-2);
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+/* ---------- MENU PRINCIPAL E SUBMENU ---------- */
+.menu {
+  background-color: #335f2e;
+  font-family: Arial, sans-serif;
+}
+
+.menu > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* mantém os itens principais lado a lado */
+}
+
+.menu li {
+  position: relative;
+}
+
+/* Links principais */
+.menu > ul > li > a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu > ul > li > a:hover {
+  background-color: #447a3c;
+}
+
+/* Submenu (dropdown) */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #335f2e;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  z-index: 999;
+}
+
+/* Exibe apenas ao passar o mouse sobre o item pai */
+.dropdown:hover > .submenu {
+  display: flex;
+}
+
+/* Links dentro do submenu */
+.submenu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  background-color: #447a3c;
+}
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--verde-escuro);
+    padding: var(--esp-2);
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+main {
+  padding: var(--esp-4);
+}
+
+/* ---------- CARDS DE PROJETOS ---------- */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--esp-3);
+}
+
+.card {
+  background: var(--branco);
+  border-radius: 8px;
+  padding: var(--esp-3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ---------- FORMULÁRIO ---------- */
+form {
+  background: var(--branco);
+  padding: var(--esp-4);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: var(--esp-4) auto;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--esp-1);
+}
+
+input, select {
+  width: 100%;
+  padding: var(--esp-1);
+  margin-bottom: var(--esp-2);
+  border: 1px solid var(--cinza);
+  border-radius: 4px;
+}
+
+button {
+  background: var(--verde-escuro);
+  color: var(--branco);
+  border: none;
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: var(--verde-claro);
+}
+
+/* ---------- RODAPÉ ---------- */
+footer {
+  text-align: center;
+  background: var(--verde-escuro);
+  color: var(--branco);
+  padding: var(--esp-3);
+  margin-top: var(--esp-4);
+  font-size: 0.9rem;
+}
