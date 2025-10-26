@@ -4,43 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto Vida Verde</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 <body>
   <!-- =================== CABEÇALHO =================== -->
-  <header>
-    <div class="logo">
-      <img src="assets/images/logo-vida-verde.png" alt="Logo Projeto Vida Verde">
+  <header role="banner">
+    <div class="logo" aria-label="Logo e nome do projeto">
+      <img src="assets/images/logo-vida-verde.svg" alt="Logo do Projeto Vida Verde" role="img">
       <h1>Projeto Vida Verde</h1>
     </div>
 
-    <button class="menu-toggle">☰</button>
+    <!-- Botão de menu acessível -->
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu de navegação">
+      ☰
+    </button>
+      <!-- Botão de modo escuro -->
+       <button id="theme-toggle">🌓 Modo
+       </button>
 
-<nav class="menu">
-  <ul>
-    <li><a href="#" data-page="inicio">Início</a></li>
-    <li class="dropdown">
-      <a href="#">Projetos ▼</a>
-      <ul class="submenu">
-        <li><a href="#" data-page="andamento">Em andamento</a></li>
-        <li><a href="#" data-page="concluidos">Concluídos</a></li>
+    <!-- Menu principal -->
+    <nav class="menu" id="menu-principal" aria-label="Menu principal">
+      <ul>
+        <li><a href="#" data-page="inicio">Início</a></li>
+        <li class="dropdown">
+          <a href="#" aria-haspopup="true" aria-expanded="false">Projetos ▼</a>
+          <ul class="submenu" aria-label="Submenu de projetos">
+            <li><a href="#" data-page="andamento">Em andamento</a></li>
+            <li><a href="#" data-page="concluidos">Concluídos</a></li>
+          </ul>
+        </li>
+        <li><a href="#" data-page="sobre">Sobre</a></li>
+        <li><a href="#" data-page="cadastro">Cadastro</a></li>
       </ul>
-    </li>
-    <li><a href="#" data-page="sobre">Sobre</a></li>
-    <li><a href="#" data-page="cadastro">Cadastro</a></li>
-  </ul>
-</nav>
+    </nav>
   </header>
 
   <!-- =================== CONTEÚDO PRINCIPAL =================== -->
-<main></main>
+  <main id="conteudo-principal" tabindex="-1" role="main">
+    <!-- O conteúdo será carregado dinamicamente via JavaScript -->
+  </main>
 
   <!-- =================== RODAPÉ =================== -->
-  <footer>
+  <footer role="contentinfo">
     <p>© 2025 Projeto Vida Verde — contato@vidaverde.org.br</p>
   </footer>
 
   <!-- =================== SCRIPTS =================== -->
-<script src="assets/js/templates.js"></script>
+  <script src="assets/js/themeToggle.min.js"></script>
+  <script src="assets/js/templates.min.js"></script>
 </body>
 </html>
