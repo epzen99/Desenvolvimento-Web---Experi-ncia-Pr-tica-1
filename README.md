@@ -1,6 +1,6 @@
 # 🌱 Projeto Vida Verde
 
-Aplicação web desenvolvida como parte das Experiências Práticas do curso de Engenharia Elétrica — módulo de Desenvolvimento Web.
+Aplicação web desenvolvida como parte das Experiências Práticas do curso de Análise e Desenvolvimento de Sistemas — módulo de Desenvolvimento Web.
 
 ## 🧩 Funcionalidades Principais
 - Single Page Application (SPA)
@@ -41,3 +41,4 @@ WCAG 2.1 / Acessibilidade Web
 
 🚀 Deploy
 Disponível em:
+https://github.com/epzen99/Desenvolvimento-Web---Experi-ncia-Pr-tica-1/tree/main/Experiencia_Pratica_4
