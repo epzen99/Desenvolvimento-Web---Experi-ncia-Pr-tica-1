@@ -12,6 +12,7 @@ A experiência prática 4 está na raiz, pois é a versão final. As demais etap
 - Estrutura semântica e acessível conforme WCAG 2.1
 
 ## 🗂️ Estrutura do Projeto
+```
 main
 ├── assets/
 │   ├── css/
@@ -43,6 +44,8 @@ main
 ├── concluidos.html
 ├── cadastro.html
 └── README.md
+```
+
 ⚙️ Tecnologias Utilizadas
 HTML5 / CSS3
 
