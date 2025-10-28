@@ -1,6 +1,7 @@
 # 🌱 Projeto Vida Verde
 
 Aplicação web desenvolvida como parte das Experiências Práticas do curso de Análise e Desenvolvimento de Sistemas — módulo de Desenvolvimento Web.
+A experiência prática 4 está na raiz, pois é a versão final. As demais etapas estão divididas dentro das pastas (Experiências Práticas 1 a 3)
 
 ## 🧩 Funcionalidades Principais
 - Single Page Application (SPA)
@@ -11,19 +12,31 @@ Aplicação web desenvolvida como parte das Experiências Práticas do curso de 
 - Estrutura semântica e acessível conforme WCAG 2.1
 
 ## 🗂️ Estrutura do Projeto
-arduino
-Copiar código
-Experiencia_Pratica_4/
+main
 ├── assets/
 │   ├── css/
+│   │   ├── design.css
 │   │   ├── styles.css
 │   │   └── styles.min.css
 │   ├── js/
-│   │   ├── templates.js
 │   │   ├── formValidation.js
+│   │   ├── formValidation.min.js
+│   │   ├── masks.js
+│   │   ├── masks.min.js
+│   │   ├── menu.js
+│   │   ├── menu.min.js
+│   │   ├── script.js
+│   │   ├── script.min.js
+│   │   ├── spa.js
+│   │   ├── spa.min.js
+│   │   ├── templates.js
+│   │   ├── templates.min.js
 │   │   ├── themeToggle.js
-│   │   └── *.min.js
+│   │   ├── themeToggle.min.js
+│   │   ├── ui.js
+│   │   ├── ui.min.js
 │   └── images/
+│   │   ├── logo-vida-verde.png
 ├── index.html
 ├── sobre.html
 ├── em-andamento.html
@@ -41,4 +54,4 @@ WCAG 2.1 / Acessibilidade Web
 
 🚀 Deploy
 Disponível em:
-https://github.com/epzen99/Desenvolvimento-Web---Experi-ncia-Pr-tica-1/tree/main/Experiencia_Pratica_4
+https://epzen99.github.io/Desenvolvimento-Web---Experi-ncia-Pr-tica-1/
